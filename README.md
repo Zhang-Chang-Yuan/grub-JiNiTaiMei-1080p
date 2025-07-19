@@ -1,0 +1,2 @@
+# grub-JiNiTaiMei
+grub theme
