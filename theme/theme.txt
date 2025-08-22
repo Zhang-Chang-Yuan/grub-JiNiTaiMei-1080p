@@ -1,0 +1,89 @@
+# GRUB2 gfxmenu Linux主题配置文件
+# 设计支持任意分辨率
+
+# 全局属性设置区域
+# 设置标题文本内容，此处为空
+title-text: ""
+# 设置桌面背景图片路径
+desktop-image: "background.jpg"
+# 设置桌面背景颜色
+desktop-color: "#FFFFFF"
+# 设置终端字体及大小
+terminal-font: "terminus-14"
+# 设置终端边框图片样式（支持通配符）
+terminal-box: "terminal_box_*.png"
+# 设置终端左上角X坐标位置
+terminal-left: "0"
+# 设置终端左上角Y坐标位置
+terminal-top: "0"
+# 设置终端宽度占比
+terminal-width: "100%"
+# 设置终端高度占比
+terminal-height: "100%"
+# 设置终端边框宽度（0表示无边框）
+terminal-border: "0"
+
+# 启动菜单配置区域
+# 定义启动菜单组件
++ boot_menu {
+  # 菜单距离左侧的百分比位置
+  left = 19%
+  # 菜单距离顶部的百分比位置
+  top = 18%
+  # 菜单宽度占比
+  width = 28%
+  # 菜单高度占比
+  height = 54%
+  # 菜单项字体及大小
+  item_font = "unifont-16"
+  # 未选中菜单项文本颜色
+  item_color = "#333333"
+  # 选中菜单项文本颜色
+  selected_item_color = "#FFFFFF"
+  # 菜单项图标宽度
+  icon_width = 32
+  # 菜单项图标高度
+  icon_height = 32
+  # 图标与文本之间的间距
+  item_icon_space = 6
+  # 每个菜单项的高度
+  item_height = 48
+  # 菜单项内部边距
+  item_padding = 3
+  # 菜单项之间的间距
+  item_spacing = 6
+  # 选中项的背景图片样式
+  selected_item_pixmap_style = "select_*.png"
+}
+
+# 图片组件配置
+# 定义图片显示组件
++ image {
+  # 图片距离顶部的百分比位置
+  top = 0%
+  # 图片距离左侧的百分比位置
+  left = 0%
+  # 图片文件路径
+  file = "info.png"
+}
+
+# 倒计时标签配置区域
+# 显示倒计时消息的标签组件
++ label {
+  # 标签距离顶部的百分比位置
+  top = 83%
+  # 标签距离左侧的百分比位置
+  left = 12%
+  # 标签宽度占比
+  width = 34%
+  # 文本对齐方式（居中）
+  align = "center"
+  # 标签ID（用于GRUB内部引用）
+  id = "__timeout__"
+  # 倒计时文本内容（%d为秒数占位符）
+  text = "Booting in %d seconds"
+  # 文本颜色
+  color = "#FFFFFF"
+  # 标签字体及大小
+  font = "terminus-16"
+}

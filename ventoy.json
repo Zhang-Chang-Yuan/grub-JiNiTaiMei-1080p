@@ -1,0 +1,63 @@
+{
+    "control":[
+        { "VTOY_MAX_SEARCH_LEVEL": "0" },
+        { "VTOY_DEFAULT_SEARCH_ROOT": "/system/mirror" }
+    ],
+    "theme":{
+        "file": "/ventoy/theme/theme.txt",
+        "gfxmode": "1920x1080",
+        "fonts":[
+            "/ventoy/font/dejavu_32.pf2",
+			"/ventoy/font/dejavu_sans_12.pf2",
+			"/ventoy/font/dejavu_sans_14.pf2",
+			"/ventoy/font/dejavu_sans_16.pf2",
+			"/ventoy/font/dejavu_sans_24.pf2",
+			"/ventoy/font/dejavu_sans_48.pf2",
+			"/ventoy/font/terminus-12.pf2",
+			"/ventoy/font/terminus-14.pf2",
+			"/ventoy/font/terminus-16.pf2",
+			"/ventoy/font/terminus-18.pf2",
+			"/ventoy/font/unifont-16.pf2",
+			"/ventoy/font/unifont-24.pf2",
+			"/ventoy/font/unifont-32.pf2"
+        ]
+    },
+    "menu_class":[
+        {
+            "key": "windows-10",
+            "class": "windows-10"
+        },
+		{
+            "key": "windows-11",
+            "class": "windows-11"
+        },
+		{
+            "key": "windows-pe",
+            "class": "windows-10"
+        },
+		{
+            "key": "linux-arch",
+            "class": "linux-arch"
+        },
+		{
+            "key": "linux-pop",
+            "class": "linux-pop"
+        },
+		{
+            "key": "linux-ubuntu",
+            "class": "linux-ubuntu"
+        },
+		{
+            "key": "linux-debian",
+            "class": "linux-debian"
+        },
+		{
+            "key": "linux-manjaro",
+            "class": "linux-manjaro"
+        },
+		{
+            "key": "linux-fedora",
+            "class": "linux-fedora"
+        }
+    ]
+}
